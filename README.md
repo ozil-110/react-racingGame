@@ -4,7 +4,7 @@
 
 ## 准备工作
 
-下载react 0.14 版，用browser.min.js转换jsx语法为js，游戏界面:
+下载react 0.14 版，用`browser.min.js`转换jsx语法为js，游戏界面:
 游戏容器roadbed，路面road，主角车hero，敌车enemy，还有公里板kilo，失败提示failbub.
 
 ## 游戏开始
@@ -12,6 +12,7 @@
 ### 马路移动
 
 小车固定在屏幕下方，路面循环向下运动。
+```js
 .roadbed{
     background:url(../resource/road.png) repeat-y;
     width:480px;
@@ -27,10 +28,10 @@
 @-webkit-keyframes roadRun{
     100%{ -webkit-transform:translateY(800px);}
 }
-
+```
 ### 控制小车移动
 
-在componentDidMount方法后通过键盘事件来监听左右方向键，并加上相应的类名。
+在`componentDidMount`方法后通过键盘事件来监听左右方向键，并加上相应的类名。
 
 ### 敌方赛车
  
